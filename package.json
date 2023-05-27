@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build:dev": "webpack --config webpack.config.js --mode development",
+    "build:dev": "webpack --config webpack.config.js",
+    "build:prod": "webpack --config webpack.prod.js",
     "dev": "webpack serve --mode development --open"
   },
   "devDependencies": {

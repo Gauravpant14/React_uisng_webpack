@@ -228,5 +228,11 @@ use: [
 
       ```
 
+<!-- Create seperate file for prod -->
+
+```
+by using mode key in webpack file , then you dont have to specifie mode in package.json file
+```
+
 git config user.name "new name"
 git config credential.username "new name"
