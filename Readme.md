@@ -207,3 +207,26 @@ Next what we have to do
 To Seperate the css we'll be using MiniCssExtractPlugin
 
 ```
+
+new MiniCssExtractPlugin(),
+
+{
+test: /\.css$/,
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader", options: { modules: true } },
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/,
+use: [
+{ loader: MiniCssExtractPlugin.loader },
+{ loader: "css-loader", options: { modules: true } },
+{ loader: "sass-loader" },
+],
+},
+
+      ```
+
+git config user.name "new name"
+git config credential.username "new name"
